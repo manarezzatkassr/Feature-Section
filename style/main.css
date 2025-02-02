@@ -68,8 +68,9 @@ a{
 .hidden-txt{
     position: absolute;
     max-height: 6em;
+    max-width: 90%;
     bottom: -6em;
-    left: 1em;
+    left: 1.2em;
     visibility: hidden;
     opacity: 0;
     transition:  transform 0.5s ease-in-out;
