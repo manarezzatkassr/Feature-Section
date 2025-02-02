@@ -48,6 +48,7 @@ a{
 .show-txt{
     position: absolute;
     min-height: 3em;
+    max-width: 85%;
     bottom: 3em;
     left: 2em;
     transition: transform 0.5s ease-in-out;
