@@ -39,14 +39,18 @@ a{
     height: 100%;
     object-fit: cover;
 }
+.card-body{
+    transform: translateY(-2.5em);
+}
 .card-body p{
     color: #ffffff;
 }
 .show-txt{
     position: absolute;
+    min-height: 3em;
     bottom: 3em;
     left: 2em;
-    transition: bottom 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .show-txt a:hover{
     color: #ffffff;
@@ -62,18 +66,19 @@ a{
 }
 .hidden-txt{
     position: absolute;
+    max-height: 6em;
     bottom: -6em;
     left: 1em;
     visibility: hidden;
     opacity: 0;
-    transition: bottom 0.5s ease-in-out;
+    transition:  transform 0.5s ease-in-out;
 }
 .card:hover .show-txt{
     opacity: 1;
-    bottom: 8em;
+    transform: translateY(-2.2em);
 }
 .card:hover .hidden-txt{
     visibility: visible;
     opacity: 1;
-    bottom: 1.5em;
+    transform: translateY(-6em);
 }
